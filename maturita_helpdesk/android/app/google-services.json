@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "844864161984",
+    "project_id": "maturitahelpdesk",
+    "storage_bucket": "maturitahelpdesk.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:844864161984:android:cee0e690437b8be3358525",
+        "android_client_info": {
+          "package_name": "com.example.maturita_helpdesk"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAV2eSI56vrBn2bwueY4C7j0FO2PJht70g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
