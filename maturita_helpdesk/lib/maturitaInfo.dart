@@ -1,26 +1,24 @@
 
 
-import 'dart:io';
-
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:maturita_helpdesk/about_screen.dart';
 import 'package:maturita_helpdesk/faq.dart';
 import 'package:maturita_helpdesk/forum_screen.dart';
-import 'package:maturita_helpdesk/maturitaInfo.dart';
+import 'package:maturita_helpdesk/home_screen.dart';
 import 'package:maturita_helpdesk/poradna.dart';
 
-class HomeScreen extends StatefulWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+class MaturitaScreen extends StatefulWidget {
+  const MaturitaScreen({Key? key}) : super(key: key);
 
   @override
-  State<HomeScreen> createState() => _HomeScreenState();
+  State<MaturitaScreen> createState() => _MaturitaScreenState();
 }
 
 
 bool _isLoading = true;
 
-class _HomeScreenState extends State<HomeScreen> {
+class _MaturitaScreenState extends State<MaturitaScreen> {
   
 
 
@@ -62,23 +60,22 @@ class _HomeScreenState extends State<HomeScreen> {
           }, child: Text("Poradna")),
         ],
       ),
-      body: 
-        
+      body: Center(
+        child:
           SingleChildScrollView(
-            child: Center(
-            
+            child: Container(
+            width: 1000,
             child: Column(children: [
-              
-            
-            Padding(padding: EdgeInsets.all(20), child: Text("Vítejte na webu Maturitní Helpdesk", style: TextStyle(color: Colors.white, fontSize: 25),),),
-            Padding(padding: EdgeInsets.all(10), child: Text("Termíny konáni",
-            style: TextStyle(color: Colors.white),),),
-            Padding(padding: EdgeInsets.all(20), child: Text("Didaktické testy společné části maturitní zkoušky se v jarním zkušebním období 2024 budou konat 2.–7. května 2024, v podzimním zkušebním období pak 1.–10. září 2024. Zkoušky profilové části se v jarním zkušebním období budou konat v období od 16. května do 10. června 2024. Konkrétní termíny stanoví ředitel školy nejpozději 2 měsíce před konáním zkoušek. V podzimním zkušebním období je pro konání zkoušek profilové části vyhrazeno období 1.–20. září 2024.", style: TextStyle(color: Colors.white),),),
-             Padding(padding: EdgeInsets.all(20), child: Text("Hodnocení písemné práce tvoří 40 % celkového hodnocení příslušné zkoušky, hodnocení ústní zkoušky pak tvoří zbývajících 60 %", style: TextStyle(color: Colors.white),),),
-            
+              Container(
+            width: 1000,
+            child: Text(""),
+          )
             ],)
           ),
           )
+        
+      )
+      ,
     );
   }
 }

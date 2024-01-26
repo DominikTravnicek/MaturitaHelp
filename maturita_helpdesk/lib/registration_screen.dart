@@ -31,7 +31,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
   Future addUserDetails() async {
     User user = auth.currentUser!;
     
-    
+    String uid=user.uid;
     await FirebaseFirestore.instance.collection('users').doc(uid).set({
       
       'nick':nickController.text,
