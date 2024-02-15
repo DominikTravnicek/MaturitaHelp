@@ -21,11 +21,20 @@ class DefaultFirebaseOptions {
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
-        return android;
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for android - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
       case TargetPlatform.iOS:
-        return ios;
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for ios - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
       case TargetPlatform.macOS:
-        return macos;
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for macos - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
       case TargetPlatform.windows:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for windows - '
@@ -50,31 +59,5 @@ class DefaultFirebaseOptions {
     projectId: 'maturitahelpdesk',
     authDomain: 'maturitahelpdesk.firebaseapp.com',
     storageBucket: 'maturitahelpdesk.appspot.com',
-  );
-
-  static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyAV2eSI56vrBn2bwueY4C7j0FO2PJht70g',
-    appId: '1:844864161984:android:cee0e690437b8be3358525',
-    messagingSenderId: '844864161984',
-    projectId: 'maturitahelpdesk',
-    storageBucket: 'maturitahelpdesk.appspot.com',
-  );
-
-  static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyAE330NuEMQCvlnD0ddOKY69RGlPfR9LwE',
-    appId: '1:844864161984:ios:704be0c65c826fb3358525',
-    messagingSenderId: '844864161984',
-    projectId: 'maturitahelpdesk',
-    storageBucket: 'maturitahelpdesk.appspot.com',
-    iosBundleId: 'com.example.maturitaHelpdesk',
-  );
-
-  static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyAE330NuEMQCvlnD0ddOKY69RGlPfR9LwE',
-    appId: '1:844864161984:ios:3325c69317287ede358525',
-    messagingSenderId: '844864161984',
-    projectId: 'maturitahelpdesk',
-    storageBucket: 'maturitahelpdesk.appspot.com',
-    iosBundleId: 'com.example.maturitaHelpdesk.RunnerTests',
   );
 }

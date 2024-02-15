@@ -67,8 +67,6 @@ class _LoginScreenState extends State<LoginScreen> {
   }
 
   Widget build(BuildContext context) {
-    double deviceHeight = MediaQuery.of(context).size.height;
-    double deviceWidth= MediaQuery.of(context).size.width;
     return Scaffold(
       backgroundColor: Color(0xff383961),
       body: SafeArea(

@@ -39,24 +39,24 @@ class _FaqScreenState extends State<FaqScreen> {
       appBar: AppBar(
         automaticallyImplyLeading: false,
         title: TextButton(onPressed: () {
-          Navigator.push(context, MaterialPageRoute(builder: (context) => HomeScreen()));
+          Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => HomeScreen()));
         },
         child: Text("Maturita Helpdesk"),),
         actions: <Widget>[
           TextButton(onPressed:() {
-            Navigator.push(context, MaterialPageRoute(builder: (context) => MaturitaScreen()));
+            Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => MaturitaScreen()));
           }, child: Text("Informace o maturitě")),
           TextButton(onPressed:() {
-            Navigator.push(context, MaterialPageRoute(builder: (context) => AboutScreen()));
+            Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => AboutScreen()));
           }, child: Text("O webu")),
           TextButton(onPressed:() {
-            Navigator.push(context, MaterialPageRoute(builder: (context) => FaqScreen()));
+            Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => FaqScreen()));
           }, child: Text("Časté otázky")),
           TextButton(onPressed:() {
-            Navigator.push(context, MaterialPageRoute(builder: (context) => ForumScreen()));
+            Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => ForumScreen()));
           }, child: Text("Forum a diskuze")),
           TextButton(onPressed:() {
-            Navigator.push(context, MaterialPageRoute(builder: (context) => PoradnaScreen()));
+            Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => PoradnaScreen()));
           }, child: Text("Poradna")),
         ],
       ),
