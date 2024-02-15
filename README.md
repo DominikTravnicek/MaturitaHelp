@@ -1,5 +1,4 @@
-# MaturitaHelp
-InfinityFree údaje: email: rakketaci@hotmail.com heslo: BorecMartin666
+# MaturitaHelp 🐀
 
 Report: https://sstebrnocz-my.sharepoint.com/:x:/g/personal/58087snupik_student_sstebrno_cz/ERrWBj_yVDFOizVyHkro4mwBe0H1Ids4kG82Pm8X7aNJDA?e=ybsOlM
 
@@ -7,3 +6,9 @@ Odkaz na maturitní okruhy: https://sstebrnocz-my.sharepoint.com/:x:/g/personal/
 
 Text:
 https://sstebrnocz-my.sharepoint.com/:w:/g/personal/58087snupik_student_sstebrno_cz/Efsrv3OsLf9FuIeDsF5LhFwB7haDkS8ZF8MGJxmaRHOuWA?e=m1LIYR
+
+Přístup na Firebase:
+e-mail: rakketaci@gmail.com heslo:MartinBorec666
+
+Odkaz na stránku:
+maturitahelpdesk.web.app
