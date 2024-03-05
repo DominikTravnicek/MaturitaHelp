@@ -65,24 +65,30 @@ class _FaqScreenState extends State<FaqScreen> {
           SingleChildScrollView(
             child: Center(
             
-            child: Column(children: [
+            child: Container(
+                            constraints: BoxConstraints(
+                                          minHeight: 200,
+                                          maxWidth: 700,
+                                        ), 
+              child: Column(children: [
+                
               
-            
-            Padding(padding: EdgeInsets.all(20), child: Text("Časté otázky", style: TextStyle(color: Colors.white, fontSize: 25),),),
-            Padding(padding: EdgeInsets.all(10), child: Text("Jak dlouho mám na přípravu na zkoušku?", style: TextStyle(color: Colors.white, fontSize: 18),),),
-            Padding(padding: EdgeInsets.all(10), child: Text("Odpověď: Délka přípravy na zkoušku se může lišit podle typu zkoušky, její obtížnosti a vašich individuálních potřeb. Většinou je doporučeno začít se připravovat několik týdnů před datem zkoušky.",
-             style: TextStyle(color: Colors.white),),),
-            Padding(padding: EdgeInsets.all(10), child: Text("Jak se efektivně připravit na zkoušku?", style: TextStyle(color: Colors.white, fontSize: 18),),),
-            Padding(padding: EdgeInsets.all(10), child: Text("Odpověď:Stanovte si plán: Vytvořte si plán učení a rozvrhujte si čas na různé části materiálu.Záznamy a poznámky: Zpřehledněte si poznámky, záznamy a učební materiály.Praxe s otázkami: Procvičujte otázky z předchozích let, abyste se seznámili s formátem zkoušky.Grupová studia: Pokud je to možné, studujte s ostatními. Diskuze a výměna názorů mohou být prospěšné.",
-             style: TextStyle(color: Colors.white),),),
-            Padding(padding: EdgeInsets.all(10), child: Text("Jak se vyhnout stresu před zkouškou?", style: TextStyle(color: Colors.white, fontSize: 18),),),
-            Padding(padding: EdgeInsets.all(10), child: Text("Odpověď:Zdravý životní styl: Dodržujte zdravý životní styl s dostatkem spánku, stravou a cvičením.Přestávky: Udržujte rovnováhu mezi učením a odpočinkem. Pravidelně si dávejte krátké přestávky.Pozitivní myšlení: Zaměřte se na pozitivní stránky učení a zvyšte si sebedůvěru.",
-             style: TextStyle(color: Colors.white),),),
-            Padding(padding: EdgeInsets.all(10), child: Text("Jak efektivně využít čas při samostudiu?", style: TextStyle(color: Colors.white, fontSize: 18),),),
-            Padding(padding: EdgeInsets.all(10), child: Text("Odpověď:Prioritizace úkolů: Identifikujte klíčová témata a priority pro studium.Aktivní učení: Zapojte se do aktivního učení, jako je vytváření poznámek, diskuse a cvičení.Sledování pokroku: Pravidelně monitorujte svůj pokrok a upravujte svůj plán podle potřeby.",
-             style: TextStyle(color: Colors.white),),),
-          
-            ],)
+              Padding(padding: EdgeInsets.all(20), child: Text("Časté otázky", style: TextStyle(color: Colors.white, fontSize: 25),),),
+              Padding(padding: EdgeInsets.all(10), child: Text("Jak dlouho mám na přípravu na zkoušku?", style: TextStyle(color: Colors.white, fontSize: 18),),),
+              Padding(padding: EdgeInsets.all(10), child: Text("Odpověď: Délka přípravy na zkoušku se může lišit podle typu zkoušky, její obtížnosti a vašich individuálních potřeb. Většinou je doporučeno začít se připravovat několik týdnů před datem zkoušky.",
+               style: TextStyle(color: Colors.white),),),
+              Padding(padding: EdgeInsets.all(10), child: Text("Jak se efektivně připravit na zkoušku?", style: TextStyle(color: Colors.white, fontSize: 18),),),
+              Padding(padding: EdgeInsets.all(10), child: Text("Odpověď:Stanovte si plán: Vytvořte si plán učení a rozvrhujte si čas na různé části materiálu.Záznamy a poznámky: Zpřehledněte si poznámky, záznamy a učební materiály.Praxe s otázkami: Procvičujte otázky z předchozích let, abyste se seznámili s formátem zkoušky.Grupová studia: Pokud je to možné, studujte s ostatními. Diskuze a výměna názorů mohou být prospěšné.",
+               style: TextStyle(color: Colors.white),),),
+              Padding(padding: EdgeInsets.all(10), child: Text("Jak se vyhnout stresu před zkouškou?", style: TextStyle(color: Colors.white, fontSize: 18),),),
+              Padding(padding: EdgeInsets.all(10), child: Text("Odpověď:Zdravý životní styl: Dodržujte zdravý životní styl s dostatkem spánku, stravou a cvičením.Přestávky: Udržujte rovnováhu mezi učením a odpočinkem. Pravidelně si dávejte krátké přestávky.Pozitivní myšlení: Zaměřte se na pozitivní stránky učení a zvyšte si sebedůvěru.",
+               style: TextStyle(color: Colors.white),),),
+              Padding(padding: EdgeInsets.all(10), child: Text("Jak efektivně využít čas při samostudiu?", style: TextStyle(color: Colors.white, fontSize: 18),),),
+              Padding(padding: EdgeInsets.all(10), child: Text("Odpověď:Prioritizace úkolů: Identifikujte klíčová témata a priority pro studium.Aktivní učení: Zapojte se do aktivního učení, jako je vytváření poznámek, diskuse a cvičení.Sledování pokroku: Pravidelně monitorujte svůj pokrok a upravujte svůj plán podle potřeby.",
+               style: TextStyle(color: Colors.white),),),
+                        
+              ],),
+            )
           ),
           )
         

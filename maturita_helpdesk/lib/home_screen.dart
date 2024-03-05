@@ -75,62 +75,68 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
         body: SingleChildScrollView(
           child: Center(
-              child: Column(
-            children: [
-              Padding(
-                padding: EdgeInsets.all(20),
-                child: Text(
-                  "Vítejte na webu Maturitní Helpdesk",
-                  style: TextStyle(color: Colors.white, fontSize: 25),
+              child: Container(
+                constraints: BoxConstraints(
+                                          minHeight: 200,
+                                          maxWidth: 700,
+                                        ),  
+                child: Column(
+                            children: [
+                Padding(
+                  padding: EdgeInsets.all(20),
+                  child: Text(
+                    "Vítejte na webu Maturitní Helpdesk",
+                    style: TextStyle(color: Colors.white, fontSize: 25),
+                  ),
                 ),
-              ),
-              Padding(
-                padding: EdgeInsets.all(10),
-                child: Text(
-                  "Termíny konáni",
-                  style: TextStyle(color: Colors.white),
+                Padding(
+                  padding: EdgeInsets.all(10),
+                  child: Text(
+                    "Termíny konáni",
+                    style: TextStyle(color: Colors.white),
+                  ),
                 ),
-              ),
-              Padding(
-                padding: EdgeInsets.all(20),
-                child: Text(
-                  "Didaktické testy společné části maturitní zkoušky se v jarním zkušebním období 2024 budou konat 2.–7. května 2024, v podzimním zkušebním období pak 1.–10. září 2024. Zkoušky profilové části se v jarním zkušebním období budou konat v období od 16. května do 10. června 2024. Konkrétní termíny stanoví ředitel školy nejpozději 2 měsíce před konáním zkoušek. V podzimním zkušebním období je pro konání zkoušek profilové části vyhrazeno období 1.–20. září 2024.",
-                  style: TextStyle(color: Colors.white),
+                Padding(
+                  padding: EdgeInsets.all(20),
+                  child: Text(
+                    "Didaktické testy společné části maturitní zkoušky se v jarním zkušebním období 2024 budou konat 2.–7. května 2024, v podzimním zkušebním období pak 1.–10. září 2024. Zkoušky profilové části se v jarním zkušebním období budou konat v období od 16. května do 10. června 2024. Konkrétní termíny stanoví ředitel školy nejpozději 2 měsíce před konáním zkoušek. V podzimním zkušebním období je pro konání zkoušek profilové části vyhrazeno období 1.–20. září 2024.",
+                    style: TextStyle(color: Colors.white),
+                  ),
                 ),
-              ),
-              Padding(
-                padding: EdgeInsets.all(20),
-                child: Text(
-                  "Hodnocení písemné práce tvoří 40 % celkového hodnocení příslušné zkoušky, hodnocení ústní zkoušky pak tvoří zbývajících 60 %",
-                  style: TextStyle(color: Colors.white),
+                Padding(
+                  padding: EdgeInsets.all(20),
+                  child: Text(
+                    "Hodnocení písemné práce tvoří 40 % celkového hodnocení příslušné zkoušky, hodnocení ústní zkoušky pak tvoří zbývajících 60 %",
+                    style: TextStyle(color: Colors.white),
+                  ),
                 ),
-              ),
-              TextButton(
-                  onPressed: () {
-                    Navigator.pushReplacement(context,
-                        MaterialPageRoute(builder: (context) => PogScreen()));
-                  },
-                  child: Text("Odkaz na maturitní okruhy předmětu POG")),
-              TextButton(
-                  onPressed: () {
-                    Navigator.pushReplacement(context,
-                        MaterialPageRoute(builder: (context) => SwaScreen()));
-                  },
-                  child: Text("Odkaz na maturitní okruhy předmětu SWA")),
-              TextButton(
-                  onPressed: () {
-                    Navigator.pushReplacement(context,
-                        MaterialPageRoute(builder: (context) => PosScreen()));
-                  },
-                  child: Text("Odkaz na maturitní okruhy předmětu POS")),
-              TextButton(
-                  onPressed: () {
-                    Navigator.pushReplacement(context,
-                        MaterialPageRoute(builder: (context) => PrgScreen()));
-                  },
-                  child: Text("Odkaz na maturitní okruhy předmětu PRG")),
-            ],
-          )),
+                TextButton(
+                    onPressed: () {
+                      Navigator.pushReplacement(context,
+                          MaterialPageRoute(builder: (context) => PogScreen()));
+                    },
+                    child: Text("Odkaz na maturitní okruhy předmětu POG")),
+                TextButton(
+                    onPressed: () {
+                      Navigator.pushReplacement(context,
+                          MaterialPageRoute(builder: (context) => SwaScreen()));
+                    },
+                    child: Text("Odkaz na maturitní okruhy předmětu SWA")),
+                TextButton(
+                    onPressed: () {
+                      Navigator.pushReplacement(context,
+                          MaterialPageRoute(builder: (context) => PosScreen()));
+                    },
+                    child: Text("Odkaz na maturitní okruhy předmětu POS")),
+                TextButton(
+                    onPressed: () {
+                      Navigator.pushReplacement(context,
+                          MaterialPageRoute(builder: (context) => PrgScreen()));
+                    },
+                    child: Text("Odkaz na maturitní okruhy předmětu PRG")),
+                            ],
+                          ),
+              )),
         ));
   }
 }
