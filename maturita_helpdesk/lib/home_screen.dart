@@ -27,6 +27,7 @@ class _HomeScreenState extends State<HomeScreen> {
     super.initState();
   }
 
+
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
@@ -110,6 +111,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     style: TextStyle(color: Colors.white),
                   ),
                 ),
+                Image.network('gs://maturitahelpdesk.appspot.com/Screenshot from 2024-03-13 13-58-37.png'),
                 TextButton(
                     onPressed: () {
                       Navigator.pushReplacement(context,
